@@ -1,0 +1,23 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "A note taker app that uses Node JS and Express.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Defy1x/c11-Note-Taker-App.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Defy1x/c11-Note-Taker-App/issues"
+  },
+  "homepage": "https://github.com/Defy1x/c11-Note-Taker-App#readme"
+}

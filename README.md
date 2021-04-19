@@ -47,8 +47,8 @@ Coming Soon.
 
 #Usage
 ## Final screenshot
-![This is the final deployed screenshot of the node project](requirements/final.png)
-![This is the final deployed screenshot of the node project](requirements/passed-tests.png)
+![This is the final deployed screenshot of the node project](requirements/screenshot-01.png)
+![This is the final deployed screenshot of the node project](requirements/screenshot-02.png)
 
 #Credits
 Thank you to everyone in the Columbia Engineering Bootcamp.

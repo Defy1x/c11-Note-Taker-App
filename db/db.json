@@ -1,9 +1,1 @@
-[{"title": "Things to Do",
-    "text": "I need to finish this homework assignment.",
-    "id": "123"
-},
-{"title": "Languages to study",
-    "text": "I need to study javascript, express, sql, and react.",
-    "id": "124"
-  }
-]
+[{"title":"Things I need to do:","text":"Study! Omg.\nClean my apartment.\nOrganize clothes for tomorrow.\nCode!\n","id":"c472814f-8d97-472a-bf62-23c3088996f6"},{"title":"Languages to study:","text":"Javascript ES6, SQL, Express, Node, and React! :o)","id":"384bfb57-777a-403e-b876-33c4f8ad197a"},{"title":"Sith Code","text":"Peace is a lie, there is only passion.\nThrough passion, I gain strength.\nThrough strength, I gain power.\nThrough power, I gain victory.\nThrough victory, my chains are broken.\nThe Force shall free me.","id":"e268043d-8ba7-474b-8ce5-f087effcfbe7"}]

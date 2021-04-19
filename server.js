@@ -24,19 +24,31 @@ app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, './public/note
 //API Routes, Displays all notes
 app.get('/api/notes', (req, res) => res.json(data));
 
-// Create New Characters - takes in JSON input
-app.post('/api/notes', (req, res) => {
-  // req.body hosts is equal to the JSON post sent from the user
-  // This works because of our body parsing middleware
+// Post a new note
+app.post("/api/notes", (req, res) => {
   const newnote = req.body;
+  newnote.id = uuidv4();
+  data.push(newnote);
+  fs.writeFile("./db/db.json", JSON.stringify(data), (err) => {
+    if (err) throw err;
+    console.log("New note has been added");
+  });
+  res.json(newnote);
+});
 
-  console.log(newnote);
-
-  // We then add the json the user sent to the character array
-  data.push(newcharacter);
-
-  // We then display the JSON to the users
-  res.json(data);
+// Deletes existing notes
+app.delete("/api/notes/:id", (req, res) => {
+  for (index of data) {
+    if (index.id == req.params.id) {
+      const removedIndex = data.indexOf(index);
+      data.splice(removedIndex, 1);
+      fs.writeFile("./db/db.json", JSON.stringify(data), (err) => {
+        if (err) throw err;
+      });
+      console.log("Note has been deleted");
+    }
+  }
+  res.json();
 });
 
 // Starts the server to begin listening

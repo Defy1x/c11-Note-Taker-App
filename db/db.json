@@ -1,9 +1,9 @@
-const notesArray = [
-  {
-    title: "Test Title",
-    text: "Test Text",
-    id: '123',
+[{"title": "Things to Do",
+    "text": "I need to finish this homework assignment.",
+    "id": "123"
+},
+{"title": "Languages to study",
+    "text": "I need to study javascript, express, sql, and react.",
+    "id": "124"
   }
-];
-
-module.exports = notesArray;
+]
